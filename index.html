@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КвітиПеремоги</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- ================== SIDEBAR  ================== -->
+    <aside class="sidebar" id="sidebar">
+      <!-- Логотип -->
+      <div class="sidebar__logo subpage">
+        <a href="#home">КвітиПеремоги</a>
+      </div>
+
+      <!-- Навігація -->
+      <nav class="sidebar__nav">
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#intro">Про проєкт</a></li>
+          <li><a href="#symbols">Символи незламності</a></li>
+          <li><a href="#gallery">Квіткова галерея </a></li>
+          <li><a href="#kaleidoscope">Квітковий калейдоскоп</a></li>
+          <li><a href="#quizes">Квізи</a></li>
+          <li><a href="#stats">Природа в цифрах</a></li>
+          <li><a href="#feedback">Коментарі</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <button
+      class="sidebar-toggle"
+      id="sidebarToggle"
+      aria-label="Відкрити меню"
+    >
+      <span class="sidebar-toggle__icon"></span>
+    </button>
+
+    <main>
+      <!-- home SECTION -->
+      <section class="section section--home" id="home">
+        <div class="home__overlay"></div>
+        <div class="home__decor home__decor--1">🌻</div>
+        <div class="home__decor home__decor--2">🌺</div>
+        <div class="home__decor home__decor--3">🔹</div>
+
+        <div class="home__content">
+          <div class="home__contest-badge">Обласний конкурс 2026</div>
+
+          <h1 class="home__title">КВІТИ ПЕРЕМОГИ</h1>
+          <p class="home__subtitle" id="typewriter"></p>
+
+          <div class="home__buttons">
+            <a href="#intro" class="btn btn--primary">Символіка</a>
+            <a href="#kaleidoscope" class="btn btn--secondary">Калейдоскоп</a>
+          </div>
+        </div>
+      </section>
+      <!-- INTRO -->
+      <section class="section" id="intro">
+        <div class="container">
+          <div class="intro__wrapper reveal">
+            <div class="home__contest-badge">Про проєкт</div>
+            <h2 class="intro__title">
+              Кожна квітка — це частинка <br /><span class="text-accent"
+                >української душі</span
+              >
+            </h2>
+
+            <div class="intro__text">
+              <p>
+                Світлини нашої природи завжди були чимось більшим, ніж просто
+                пейзажі. Сьогодні квіти стали символами нашої сили, незламної
+                стійкості та надії. Від золотого соняшника до червоної калини —
+                кожна пелюстка розповідає історію боротьби та відродження.
+              </p>
+            </div>
+
+            <div class="intro__motto">
+              <span class="motto__icon">🌷</span>
+              <p class="motto__text">
+                “Квіти розквітають після дощу — як Україна після бурі.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SYMBOLS -->
+      <section class="section" id="symbols">
+        <h2 class="section-title">Символи нашої незламності</h2>
+
+        <div class="cards">
+          <article class="card flip-card reveal">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/sunflower1.jpg" alt="Соняшник" />
+                <h3>Соняшник</h3>
+                <p>Символ енергії сонця та життєвої сили.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Сила сонця</h3>
+                <p>
+                  Він завжди повертається до світла. Для українців це символ
+                  праці, стійкості та віри в перемогу добра над темрявою.
+                </p>
+                <a href="flowers.html#sunflower" class="btn btn--secondary"
+                  >Дізнатись більше</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="card flip-card reveal">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/poppy1.jpg" alt="Мак" />
+                <h3>Мак</h3>
+                <p>Символ пам'яті та безсмертя роду.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Пам'ять серця</h3>
+                <p>
+                  Червоний мак — це глибока шана до тих, хто захищав рідну
+                  землю, та водночас символ розквіту життя після випробувань.
+                </p>
+                <a href="flowers.html#poppy" class="btn btn--secondary"
+                  >Дізнатись більше</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="card flip-card reveal">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/viburnum1.jpg" alt="Калина" />
+                <h3>Калина</h3>
+                <p>Символ рідної землі та незламності.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Душа України</h3>
+                <p>
+                  "А ми тую червону калину підіймемо..." — уособлення єдності,
+                  міцного коріння нації та незгасної надії на відродження.
+                </p>
+                <a href="flowers.html#viburnum" class="btn btn--secondary"
+                  >Дізнатись більше</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="card flip-card reveal">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/cornflower1.jpg" alt="Волошка" />
+                <h3>Волошка</h3>
+                <p>Символ чистоти, довіри та вірності.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Небесна блакить</h3>
+                <p>
+                  Ця квітка символізує мирне небо, душевну чистоту та непохитну
+                  вірність рідній землі, на якій вона проростає.
+                </p>
+                <a href="flowers.html#cornflower" class="btn btn--secondary"
+                  >Дізнатись більше</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="card flip-card reveal">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/mallow1.jpg" alt="Мальва" />
+                <h3>Мальва</h3>
+                <p>Символ любові до рідної хати.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Оберіг дому</h3>
+                <p>
+                  Квітка-оберіг, що завжди росла під вікнами. Вона символізує
+                  зв'язок поколінь, духовне коріння та затишок рідної оселі.
+                </p>
+                <a href="flowers.html#mallow" class="btn btn--secondary"
+                  >Дізнатись більше</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="card flip-card reveal">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/marigolds1.jpg" alt="Чорнобривці" />
+                <h3>Чорнобривці</h3>
+                <p>Символ матері та родинного вогню.</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>Тепло родини</h3>
+                <p>
+                  Оспівані в піснях, ці квіти нагадують про материнську любов,
+                  затишок батьківського дому та нерозривну єдність сім'ї.
+                </p>
+                <a href="flowers.html#marigolds" class="btn btn--secondary"
+                  >Дізнатись більше</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section" id="gallery">
+        <h2 class="section-title">Галерея</h2>
+        <div class="grid-container">
+          <div class="bubble color1 reveal">
+            <a href="gallery.php#gallery1">Соняшник</a>
+          </div>
+          <div class="bubble color2 reveal">
+            <a href="gallery.php#gallery2">Мак</a>
+          </div>
+          <div class="bubble color3 reveal">
+            <a href="gallery.php#gallery3">Калина</a>
+          </div>
+          <div class="bubble color3 reveal">
+            <a href="gallery.php#video-hub-1">Волошка</a>
+          </div>
+          <div class="bubble color1 reveal">
+            <a href="gallery.php#video-hub-2">Мальва</a>
+          </div>
+          <div class="bubble color2 reveal">
+            <a href="gallery.php#gallery1">Чорнобривці</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------Квітковий калейдоскоп  -->
+      <section class="section" id="kaleidoscope">
+        <h2 class="section-title">Творча майстерня</h2>
+        <p
+          style="
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--color-text-light);
+          "
+        >
+          Оберіть квітучий символ для цифрового розфарбовування
+        </p>
+
+        <div class="flower-grid reveal">
+          <a href="kaleidoscopee.html#sunflower" class="flower-tile tile-1">
+            <span class="tile-icon">🌻</span>
+            <span class="tile-name">Соняшник</span>
+            <span class="tile-action">Малювати →</span>
+          </a>
+
+          <a href="kaleidoscopee.html#poppy" class="flower-tile tile-2">
+            <span class="tile-icon">🌺</span>
+            <span class="tile-name">Мак</span>
+            <span class="tile-action">Малювати →</span>
+          </a>
+
+          <a href="kaleidoscopee.html#cornflower" class="flower-tile tile-3">
+            <span class="tile-icon">🔹</span>
+            <span class="tile-name">Волошка</span>
+            <span class="tile-action">Малювати →</span>
+          </a>
+
+          <a href="kaleidoscopee.html#viburnum" class="flower-tile tile-4">
+            <span class="tile-icon">🍒</span>
+            <span class="tile-name">Калина</span>
+            <span class="tile-action">Малювати →</span>
+          </a>
+
+          <a href="kaleidoscopee.html#daisy" class="flower-tile tile-5">
+            <span class="tile-icon">🌼</span>
+            <span class="tile-name">Ромашка</span>
+            <span class="tile-action">Малювати →</span>
+          </a>
+
+          <a href="kaleidoscopee.html#mallow" class="flower-tile tile-6">
+            <span class="tile-icon">🌸</span>
+            <span class="tile-name">Мальва</span>
+            <span class="tile-action">Малювати →</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ================== SECTION 5 тести  ================== -->
+      <section class="section" id="quizes">
+        <h2 class="section-title reveal">Тести</h2>
+        <div class="test-cards-container reveal">
+          <div class="test-card">
+            <img
+              src="img/sunflower4.jpg"
+              alt="Географія"
+              class="test-card__image"
+            />
+            <h3>Соняшник</h3>
+            <a href="quizz.html#quiz-section1" class="btn btn--test"
+              >Пройти квіз →</a
+            >
+          </div>
+
+          <div class="test-card">
+            <img src="img/poppy4.jpg" alt="Наука" class="test-card__image" />
+            <h3>Мак</h3>
+
+            <a href="quizz.html#quiz-section2" class="btn btn--test"
+              >Пройти квіз →</a
+            >
+          </div>
+
+          <div class="test-card">
+            <img
+              src="img/viburnum4.jpg"
+              alt="Екологія"
+              class="test-card__image"
+            />
+            <h3>Калина</h3>
+            <a href="quizz.html#quiz-section3" class="btn btn--test"
+              >Пройти квіз →</a
+            >
+          </div>
+
+          <div class="test-card">
+            <img
+              src="img/cornflower4.jpg"
+              alt="Екологія"
+              class="test-card__image"
+            />
+            <h3>Волошка</h3>
+            <a href="quizz.html#quiz-section4" class="btn btn--test"
+              >Пройти квіз →</a
+            >
+          </div>
+
+          <div class="test-card">
+            <img
+              src="img/mallow4.jpg"
+              alt="Екологія"
+              class="test-card__image"
+            />
+            <h3>Мальва</h3>
+            <a href="quizz.html#quiz-section5" class="btn btn--test"
+              >Пройти квіз →</a
+            >
+          </div>
+
+          <div class="test-card">
+            <img
+              src="img/marigolds4.jpg"
+              alt="Екологія"
+              class="test-card__image"
+            />
+            <h3>Чорнобривці</h3>
+            <a href="quizz.html#quiz-section6" class="btn btn--test"
+              >Пройти квіз →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================  4 ================== -->
+      <section class="section" id="stats">
+        <h2 class="section-title">Природа в цифрах</h2>
+
+        <div class="stats-container">
+          <div class="stat-item reveal">
+            <div class="stat-icon">🌻</div>
+            <div class="stat-number" data-target="2000">0</div>
+            <div class="stat-label">
+              <strong>Соняшник:</strong> насінин в одному кошику
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-icon">🌺</div>
+            <div class="stat-number" data-target="30000">0</div>
+            <div class="stat-label">
+              <strong>Мак:</strong> насінин в одній коробочці
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-icon">🍒</div>
+            <div class="stat-number" data-target="200">0</div>
+            <div class="stat-label">
+              <strong>Калина:</strong> % вітаміну С відносно лимона
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-icon">🔹</div>
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">
+              <strong>Волошка:</strong> видів по всьому світу
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-icon">🌸</div>
+            <div class="stat-number" data-target="250">0</div>
+            <div class="stat-label">
+              <strong>Мальва:</strong> см висоти стебла
+            </div>
+          </div>
+
+          <div class="stat-item reveal">
+            <div class="stat-icon">🌼</div>
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">
+              <strong>Чорнобривці:</strong> см радіус захисту ґрунту
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================== feedback  ================== -->
+    <section class="section" id="feedback">
+      <h2 class="section-title">Твій голос має вагу!</h2>
+      <div class="feedback-cta reveal">
+        <div class="feedback-cta__content">
+          <p>
+            Наш «Квітковий калейдоскоп» росте завдяки твоїм ідеям! Поділися
+            враженнями від квізів або розкажи свою історію про українські
+            квіти-символи та доповни нашу колекцію відгуків.
+          </p>
+          <a href="feedback.php" class="btn btn--feedback">
+            <span>Залишити свій слід</span>
+            <i class="icon-pencil">🌿</i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="dot-nav">
+      <a href="#home" class="dot" data-section="home"><span>Головна</span></a>
+      <a href="#intro" class="dot" data-section="intro"
+        ><span>Про проєкт</span></a
+      >
+      <a href="#symbols" class="dot" data-section="symbols"
+        ><span>Символи незламності</span></a
+      >
+      <a href="#gallery" class="dot" data-section="gallery"
+        ><span>Квіткова галерея</span></a
+      >
+      <a href="#kaleidoscope" class="dot" data-section="kaleidoscope"
+        ><span>Квітковий калейдоскоп</span></a
+      >
+      <a href="#quizes" class="dot" data-section="quizes"><span>Квізи</span></a>
+
+      <a href="#stats" class="dot" data-section="stats"
+        ><span>Природа в цифрах</span></a
+      >
+      <a href="#feedback" class="dot" data-section="feedback"
+        ><span>Коментарі</span></a
+      >
+
+      <a href="#footer" class="dot" data-section="footer"
+        ><span> Контакти</span></a
+      >
+    </nav>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <address>Контакти: rusakova@dlit.dp.ua</address>
+      <p>&copy; 2026 КвітиПеремоги</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/quiz-data.js"></script>
+    <script src="js/script-main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const dots = document.querySelectorAll(".dot");
+
+        const options = {
+          root: null,
+          threshold: 0.3,
+          rootMargin: "-10% 0px -40% 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              console.log("Бачу секцію:", entry.target.id);
+
+              dots.forEach((dot) => dot.classList.remove("active"));
+
+              const activeDot = document.querySelector(
+                `.dot[href="#${entry.target.id}"]`
+              );
+              if (activeDot) {
+                activeDot.classList.add("active");
+              }
+            }
+          });
+        }, options);
+
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      });
+
+      const phrases = [
+        "Символи незламності.",
+        "Краса, що проростає крізь бурю.",
+        "Кожна пелюстка — частинка душі.",
+      ];
+
+      let phraseIndex = 0;
+      let charIndex = 0;
+      const speed = 70;
+      const pause = 2500;
+
+      function typeWriter() {
+        const typewriterElement = document.getElementById("typewriter");
+        const currentPhrase = phrases[phraseIndex];
+
+        if (charIndex < currentPhrase.length) {
+          typewriterElement.innerHTML += currentPhrase.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, speed);
+        } else {
+          setTimeout(() => {
+            typewriterElement.innerHTML = "";
+            charIndex = 0;
+
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+
+            typeWriter();
+          }, pause);
+        }
+      }
+
+      window.onload = typeWriter;
+    </script>
+  </body>
+</html>

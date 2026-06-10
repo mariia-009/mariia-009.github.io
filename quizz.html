@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Квіткова Вікторина</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="subpage-body">
+    <nav class="subpage-nav">
+      <div class="subpage-nav__container">
+        <div class="sidebar__logo subpage-logo">
+          <a href="index.html">Квіти Перемоги</a>
+        </div>
+        <ul class="subpage-nav__links">
+          <li><a href="#quiz-home">Головна</a></li>
+          <li><a href="#quiz1">Соняшник</a></li>
+          <li><a href="#quiz2">Мак</a></li>
+          <li><a href="#quiz3">Калина</a></li>
+          <li><a href="#quiz4">Волошка</a></li>
+          <li><a href="#quiz5">Мальва</a></li>
+          <li><a href="#quiz6">Чорнобривці</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section
+        class="subpage-hero"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url('img/quiz.jpg');
+        "
+        id="quiz-home"
+      >
+        <div class="subpage-hero__content">
+          <h1>Квіткова вікторина</h1>
+          <p>Перевір свої знання про символи української природи</p>
+          <a href="#quiz1" class="subpage-home-btn">Почати тест</a>
+        </div>
+      </section>
+
+      <section
+        class="gallery-section"
+        id="quiz-section1"
+        style="padding: 40px 0; min-height: auto"
+      >
+        <div
+          class="info-container"
+          style="text-align: center; margin-bottom: 20px"
+        >
+          <span class="section-tag">Рівень 1</span>
+          <h2 class="subpage-title">Соняшник</h2>
+        </div>
+        <div id="quiz1" class="quiz-container"></div>
+      </section>
+
+      <section
+        class="gallery-section"
+        id="quiz-section2"
+        style="padding: 40px 0; min-height: auto"
+      >
+        <div
+          class="info-container"
+          style="text-align: center; margin-bottom: 20px"
+        >
+          <span class="section-tag">Рівень 2</span>
+          <h2 class="subpage-title">Мак</h2>
+        </div>
+        <div id="quiz2" class="quiz-container"></div>
+      </section>
+
+      <section
+        class="gallery-section"
+        id="quiz-section3"
+        style="padding: 40px 0; min-height: auto"
+      >
+        <div
+          class="info-container"
+          style="text-align: center; margin-bottom: 20px"
+        >
+          <span class="section-tag">Рівень 3</span>
+          <h2 class="subpage-title">Калина</h2>
+        </div>
+        <div id="quiz3" class="quiz-container"></div>
+      </section>
+
+      <section
+        class="gallery-section"
+        id="quiz-section4"
+        style="padding: 40px 0; min-height: auto"
+      >
+        <div
+          class="info-container"
+          style="text-align: center; margin-bottom: 20px"
+        >
+          <span class="section-tag">Рівень 4</span>
+          <h2 class="subpage-title">Волошка</h2>
+        </div>
+        <div id="quiz4" class="quiz-container"></div>
+      </section>
+
+      <section
+        class="gallery-section"
+        id="quiz-section5"
+        style="padding: 40px 0; min-height: auto"
+      >
+        <div
+          class="info-container"
+          style="text-align: center; margin-bottom: 20px"
+        >
+          <span class="section-tag">Рівень 5</span>
+          <h2 class="subpage-title">Мальва</h2>
+        </div>
+        <div id="quiz5" class="quiz-container"></div>
+      </section>
+
+      <section
+        class="gallery-section"
+        id="quiz-section6"
+        style="padding: 40px 0; min-height: auto"
+      >
+        <div
+          class="info-container"
+          style="text-align: center; margin-bottom: 20px"
+        >
+          <span class="section-tag">Рівень 6</span>
+          <h2 class="subpage-title">Чорнобривці</h2>
+        </div>
+        <div id="quiz6" class="quiz-container"></div>
+      </section>
+    </main>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/quiz-data.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        testsData.forEach((test) => {
+          const container = document.getElementById(test.containerId);
+          if (container) {
+            new Quiz(test.containerId, test.questions);
+          }
+        });
+      });
+    </script>
+    <script src="js/quiz-script.js"></script>
+  </body>
+</html>

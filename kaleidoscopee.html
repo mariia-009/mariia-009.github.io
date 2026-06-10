@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Квітковий калейдоскоп</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="subpage-body">
+    <nav class="subpage-nav">
+      <div class="subpage-nav__container">
+        <div class="sidebar__logo subpage-logo">
+          <a href="index.html">Квіти Перемоги</a>
+        </div>
+        <ul class="subpage-nav__links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="flowers.html">Символіка</a></li>
+          <li><a href="gallery.php">Галерея</a></li>
+          <li><a href="kaleidoscope.html">Калейдоскоп</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header
+      class="subpage-hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('img/kaleidoscopee.jpg');
+      "
+    >
+      <div class="subpage-hero__content">
+        <h1>Квітковий калейдоскоп</h1>
+        <p>Створіть свій унікальний візерунок, розфарбовуючи символи України</p>
+        <a href="#garden" class="subpage-home-btn">Почати творити</a>
+      </div>
+    </header>
+
+    <main id="garden">
+      <section class="info-section">
+        <div class="info-container" style="text-align: center">
+          <span class="section-tag">Інструменти</span>
+          <h2 class="subpage-title">Ваша палітра</h2>
+
+          <div class="palette-container">
+            <div class="palette" id="mainPalette">
+              <div
+                class="color-circle active"
+                style="background: #ffd700"
+                data-color="#FFD700"
+              ></div>
+              <div
+                class="color-circle"
+                style="background: #0057b7"
+                data-color="#0057B7"
+              ></div>
+              <div
+                class="color-circle"
+                style="background: #e30613"
+                data-color="#E30613"
+              ></div>
+              <div
+                class="color-circle"
+                style="background: #ffffff; border: 1px solid #ddd"
+                data-color="#FFFFFF"
+              ></div>
+              <div
+                class="color-circle"
+                style="background: #4caf50"
+                data-color="#4CAF50"
+              ></div>
+              <div
+                class="color-circle"
+                style="background: #000000"
+                data-color="#000000"
+              ></div>
+              <input
+                type="color"
+                id="customColor"
+                value="#FFD700"
+                title="Власний колір"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section section--alt">
+        <div class="info-container">
+          <div class="paint-grid" id="flower-garden"></div>
+        </div>
+      </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top" title="Нагору">
+      <span class="arrow">↑</span>
+    </button>
+
+    <script src="js/kaleidoscopee.js"></script>
+    <script>
+      // Код для кнопки "Нагору" (з твого прикладу)
+      const backToTopBtn = document.getElementById("backToTop");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 300 ||
+          document.documentElement.scrollTop > 300
+        ) {
+          backToTopBtn.classList.add("show");
+        } else {
+          backToTopBtn.classList.remove("show");
+        }
+      };
+      backToTopBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+  </body>
+</html>
